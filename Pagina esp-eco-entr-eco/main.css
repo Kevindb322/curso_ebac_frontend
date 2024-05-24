@@ -1,0 +1,113 @@
+/*-------------Reset de Pagina-------------*/
+* { 
+    box-sizing: border-box; /**/
+    margin: 0%; /**/
+    padding: 0%; /**/
+}
+/*-----------------------------------------*/
+
+/*Colocando cor no "filho direto do body*/
+body > header {
+    background-color: #411C63;
+    color: #fff;
+    padding: 16px 0; /*Adicionando um espaçamento no título*/
+}
+
+/*Atualizando o container*/
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Estilizando as listas do header*/
+header li {
+    display: inline; /*Configura a forma que o elemento é exibido*/
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-left: 16px;
+}
+
+header li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Estilizando a classe container*/
+.container {
+    width: 1366px; /*Selecionando a largura*/
+    margin: 0 auto; /*Selecionando a margem topo/direita/baixo/esquerda */
+}
+
+/*Estilizando a classe articles*/
+.articles { 
+    display: flex; /*Organiza o layout um ao lado do outro*/
+    flex-wrap: wrap; /*Cria novas linhas ao chegar no limite definido*/
+    justify-content: space-between; /*Divide os espaços igualmente*/
+}
+
+/*Estilizando as imagens da classe articles no campo article*/
+.articles article img {
+    /*height: 180px; Selecionando a altura da imagem*/
+    width: 100%;
+}
+
+/*Mudando os article dentro da classe articles*/
+.articles article { 
+    width: 30%; /*Limitando o maximo de campos no espaço*/
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles article{
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a {
+    background-color: #ff7900;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    display: inline-block;
+}
+
+.articles article a:hover{
+    text-decoration: underline;
+}
+
+.articles article p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#sports {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#economy {
+    background-color: rgba(255,255,0,0.1);
+}
+
+#entertainment {
+    background-color: rgba(0,0,0,0.1);
+}
+
+#tecnology {
+    background-color: rgba(0,255,255,0.1);
+}
